@@ -45,7 +45,7 @@ class Game extends Component{
         })
         this.timer = setInterval(() => {
             this.setState({time: this.state.time - 1});
-        if(this.state.time === 0 || this.state.level === 70)
+        if(this.state.time === 0 || this.state.level === 71)
             this.resetTimer();
         }, 1000);
 
