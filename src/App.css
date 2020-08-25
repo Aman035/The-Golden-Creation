@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Permanent+Marker&Balsamiq+Sans&display=swap');
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  margin: 0;
+  padding:0;
+}
+p{
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 1.1rem;
+}
+.gold{
+  color:goldenrod
+}
+.heightset{
+  display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+
+
+ 
+/*********************************HOME COMPONENT*****************************************/
+.jumbotron{
+  background-color: black;
+  min-height: 500px;
+  text-align: center;
+}
+.header{
+  margin: 5rem 0 1rem 0;
+  font-size: 5rem;
+  font-family: 'Permanent Marker', cursive;
+  color: #ffffff;
+}
+.headerimg{
+  border-radius: 100%;
+}
+.subHeading{
+  color: lightgrey;
+}
+.customvideo{
+  border-radius: 100%;
+  width: 30%;
+  margin: 100px 0 35px 0;
+}
+.customvideo2{
+  border-radius: 100%;
+  width: 60%;
+}
+.homerow{
+  margin: 100px 0;
+}
+.align{
+  text-align: center;
+}
+/*******************************************************************************************/
+/*********************************EXPLORE COMPONENT*****************************************/
+.Exploreheading{
+  margin : 100px 0 70px 0;
+  font-family: 'Aclonica', sans-serif;
+  text-align: center;
+}
+/*******************************************************************************************/
+/*********************************GAME COMPONENT*****************************************/
+.game{
+  margin : 20px 0;
+  font-family: 'Aclonica', sans-serif;
+  text-align: center;
+}
+.gamecol{
+  padding: 15px 0;
+}
+/*******************************************************************************************/
+/*********************************HEADER COMPONENT*****************************************/
+.nav-item{
+  font-weight: bolder;
+  font-size: 1rem;
+}
+/*******************************************************************************************/
+/*********************************FOOTER COMPONENT*****************************************/
+.footer{
+  padding: 15px 0;
+  background-color: #ffffff;
+  text-align: center;
+  min-height: 10vh;
+}
+/*******************************************************************************************/
+/*********************************APPLICATION COMPONENT*****************************************/
+.Cardrow{
+  margin: 100px 0 0 0;
+}
+.application-col{
+  text-align: center;
+}
+/*******************************************************************************************/
+/*********************************RENDER-CARD COMPONENT*****************************************/
+.colcus{
+  margin :20px 0;
+}
+/*******************************************************************************************/
+/*********************************ITEM-DETAIL COMPONENT*****************************************/
+.secondary{
+  margin: 100px 0 0 0;
+  color :#ff7171;
+}
+.itemrow{
+  margin: 10px 0;
+}
+.customimg{
+  padding: 20px;
+}
+.itemtitle{
+  font-family: 'Aclonica', sans-serif;
+  margin: 30px 0;
+}
+/*******************************************************************************************/
+@media screen and (max-width: 48em){
+  body{
+      text-align: center;
+  }
+  .header{
+    font-size: 2rem;
+  }
+  .customvideo{
+    margin: 30px 0 20px 0;
+    width : 70%;
+  }
+}
+/*********************************LOADING COMPONENT*****************************************/
+.loading{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("/assets/images/loading/1.gif")
+  50% 50% no-repeat;
+  background-color: #000000;
+}
