@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import CustomCard from "./render-card";
 import Button from '@material-ui/core/Button';
 
 function RenderCard({items}){
+
     //for randomizing the display of cards
     for (var i = items.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -13,7 +14,7 @@ function RenderCard({items}){
        const allitems = items.map( (item) =>{
             return(
                 <div  key= {item.id} className="col-6 col-md-3 colcus">
-                <CustomCard item ={item}/>
+                    <CustomCard item ={item}/>
                 </div>
             );
         })

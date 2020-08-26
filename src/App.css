@@ -24,7 +24,6 @@ p{
   text-align: center;
 }
 .header{
-  margin: 5rem 0 1rem 0;
   font-size: 5rem;
   font-family: 'Permanent Marker', cursive;
   color: #ffffff;
@@ -53,7 +52,7 @@ p{
 /*******************************************************************************************/
 /*********************************EXPLORE COMPONENT*****************************************/
 .Exploreheading{
-  margin : 100px 0 70px 0;
+  margin : 30px 0 70px 0;
   font-family: 'Aclonica', sans-serif;
   text-align: center;
 }
@@ -86,7 +85,7 @@ p{
 /*******************************************************************************************/
 /*********************************APPLICATION COMPONENT*****************************************/
 .Cardrow{
-  margin: 100px 0 0 0;
+  margin: 20px 0 0 0;
 }
 .application-col{
   text-align: center;

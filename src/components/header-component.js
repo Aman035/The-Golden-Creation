@@ -4,7 +4,7 @@ import {Link,NavLink} from "react-router-dom";
 function Header()
 {
     return (
-        <nav className="navbar navbar-light navbar-expand fixed-top bg-white">
+        <nav className="navbar navbar-light navbar-expand bg-white">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/" src=""><img src="\assets\images\header\l1.png" alt="logo" height="40px" width="40px"/></Link>
                 <div className="ml-auto">
