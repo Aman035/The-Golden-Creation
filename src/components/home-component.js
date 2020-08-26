@@ -1,17 +1,24 @@
 import React from "react";
-
+import {FadeTransform,Fade} from 'react-animation-components';
 function Home()
 {
     return (
         <div>
             <div className = "jumbotron container-fluid justify-content-between bg-black">
                 <h1 className="header">The <span className="gold">Golden</span> Ratio</h1>
-                <video src='/assets/video/2.mp4' autoPlay={true} loop={true} className="customvideo" muted={true}/>
+                <FadeTransform in 
+                transformProps={{
+                  exitTransform: 'scale(0.5) translateY(-50%)'
+                  }}>
+                    <video src='/assets/video/2.mp4' autoPlay={true} loop={true} className="customvideo" muted={true}/>
+                </FadeTransform>
                 <h4 className="subHeading">I Exist Everywhere....</h4>
             </div>
             <div className="row  homerow">
                 <div className ="col-12 col-md-4 offset-md-1">
-                    <video src='/assets/video/1.mp4' autoPlay={true} loop={true} className="customvideo2" muted={true}/>
+                    <Fade in>
+                        <video src='/assets/video/1.mp4' autoPlay={true} loop={true} className="customvideo2" muted={true}/>
+                    </Fade>
                 </div>
                 <div className="col-12 col-md-6">
                     <h3 className="itemtitle">What is <span className="gold">Golden</span> Ratio?</h3>
