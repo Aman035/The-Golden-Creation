@@ -19,7 +19,7 @@ function Main(){
     const [Loading,setLoading]=useState(true);
 
     useEffect(() => {
-        setTimeout(()=>setLoading(false), 5000);
+        setTimeout(()=>setLoading(false), 3000);
       });
 
     //saving state of applications when switching to details page
