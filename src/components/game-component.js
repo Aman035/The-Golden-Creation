@@ -123,6 +123,7 @@ class Game extends Component{
                 }})
         }
         else{
+            if(this.state.gameStart)
             await this.resetTimer();
         }
         return;
