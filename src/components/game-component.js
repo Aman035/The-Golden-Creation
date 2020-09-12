@@ -53,14 +53,14 @@ class Game extends Component{
 
     category(){
         var cat;
-        if(this.state.score<=10)
+        if(this.state.score<=5)
         cat = "Newbie";
         else{
-            if(this.state.score<=25)
+            if(this.state.score<=20)
             cat = "Average";
 
             else{
-                if(this.state.score<=50)
+                if(this.state.score<=40)
                 cat = "Expert";
                 else
                 cat = "Grand Master";
@@ -122,6 +122,9 @@ class Game extends Component{
                     v4 : array[3]
                 }})
         }
+        else{
+            await this.resetTimer();
+        }
         return;
     }
         
@@ -172,9 +175,14 @@ class Game extends Component{
                         {parseFloat(this.state.third)/parseFloat(this.state.second)}
                     </div>
                 :null}
+                {this.state.gameStart?
+                    <div className="col-12 gamecol">
+                        <h3>Current Score : {this.state.level-1}</h3>
+                    </div>
+                :null}
                 {this.state.display_score?
                     <div className="col-12 gamecol">
-                        <h3>Score : {this.state.score}</h3>
+                        <h3>Final Score : {this.state.score}</h3>
                         <h5>Category : <span className="gold">{this.state.category}</span></h5>
                     </div>
                 :null}

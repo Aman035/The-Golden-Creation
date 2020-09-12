@@ -27,13 +27,13 @@ function Explore(){
                     <p>As soon as you click the start button ,the game will begin and a 1 minute timer will start running.</p>
                     <p>The game starts from 9th term of fibonacci series (the term after 13) and consists of total 70 Levels.</p>
                     <p>At each level of game you need to select the correct term to clear the level.</p>
-                    <p>At each level you can select a number unlimited no. of times till you get the correct answer.</p>
+                    <p>If you'll choose the wrong answer then your game will end then and there.</p>
                     <p>Based on the no. of level cleared you would get the category as-</p>
                     <ul className="list-unstyled">
-                        <li><b>Newbie</b> - 0 to 10</li>
-                        <li><b>Average</b> - 11 to 25</li>
-                        <li><b>Expert</b> - 26 to 50</li>
-                        <li><b>Grand Master</b> - Above 50</li>
+                        <li><b>Newbie</b> - 0 to 5</li>
+                        <li><b>Average</b> - 6 to 20</li>
+                        <li><b>Expert</b> - 21 to 40</li>
+                        <li><b>Grand Master</b> - Above 40</li>
                     </ul>
                 </div>
             </div>
